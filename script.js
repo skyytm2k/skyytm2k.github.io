@@ -1,4 +1,3 @@
-// script.js
 let currentReviewIndex = 0;
 const reviewsPerPage = 3;
 const isAdmin = false; // Установите false для обычного пользователя
@@ -118,5 +117,14 @@ document.querySelectorAll('nav a').forEach(anchor => {
                 behavior: 'smooth'
             });
         }
+    });
+});
+
+// Прокрутка вверх при нажатии на логотип
+document.querySelector('.logo-link').addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
 });
