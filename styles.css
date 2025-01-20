@@ -169,7 +169,7 @@ nav a:hover::after {
 
 .welcome-image img {
     width: 100%;
-    max-width: 801px; /* Увеличиваем размер изображения */
+    max-width: 800px; /* Увеличиваем размер изображения */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }

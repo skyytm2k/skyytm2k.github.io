@@ -4,7 +4,7 @@ const isAdmin = false; // Установите false для обычного п�
 
 // Функция для добавления отзыва
 function addReview() {
-    const name = document.getElementById('revew-name').value;
+    const name = document.getElementById('review-name').value;
     const phone = document.getElementById('review-phone').value;
     const text = document.getElementById('review-text').value;
     const rating = document.querySelector('input[name="fst"]:checked').value;
