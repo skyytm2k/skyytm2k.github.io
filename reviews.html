@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="reviews">Отзывы</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Логотип компании" class="logo">
+        </a>
+        <nav>
+            <a href="about.html" data-key="about">О нас</a>
+            <a href="services.html" data-key="services">Услуги</a>
+            <a href="reviews.html" data-key="reviews">Отзывы</a>
+            <a href="contacts.html" data-key="contacts">Контакты</a>
+        </nav>
+        <div class="contact-info">
+            <span>+7 (978) 512-03-92</span>
+        </div>
+        <button id="language-toggle">EN</button>
+    </header>
+
+    <div class="container">
+        <div id="reviews" class="reviews">
+            <div class="section-title">
+                <h2 data-key="reviews">Клиенты говорят</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="review-form">
+                <input type="text" id="review-name" placeholder="Ваше ФИО" required>
+                <input type="text" id="review-phone" placeholder="Ваш номер телефона" required>
+                <textarea id="review-text" placeholder="Ваш отзыв" rows="5" required></textarea>
+                
+                <div class="full-stars">
+                    <div class="rating-group">
+                        <input name="fst" value="0" type="radio" disabled checked />
+                        <label for="fst-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-1" value="1" type="radio" />
+                        <label for="fst-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-2" value="2" type="radio" />
+                        <label for="fst-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-3" value="3" type="radio" />
+                        <label for="fst-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-4" value="4" type="radio" />
+                        <label for="fst-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-5" value="5" type="radio" />
+                    </div>
+                </div>
+                
+                <button onclick="addReview()" data-key="addReview">Добавить отзыв</button>
+            </div>
+            <div class="review-list" id="review-list"></div>
+            <div class="nav-arrows">
+                <button onclick="prevReview()">←</button>
+                <button onclick="nextReview()">→</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="images/logo.png" alt="Логотип компании" class="logo">
+        <div class="social-links">
+            <a href="https://vk.com/skyteamer" target="_blank">ВК</a>
+            <a href="https://t.me/skyteamer" target="_blank">Телеграмм</a>
+            <a href="#" onclick="alert('он заблакирован трололо :))')">Тикток</a>
+        </div>
+        <p>© 2025, <span data-key="rights">Все права защищены</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
