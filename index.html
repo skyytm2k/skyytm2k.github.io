@@ -35,7 +35,7 @@
                     <li><img src="images/icon-check.png" alt="Иконка"> <span data-key="professionalEquipment">Работаем только с профессиональным оборудованием</span></li>
                     <li><img src="images/icon-check.png" alt="Иконка"> <span data-key="warranty">Гарантия до 24 месяцев!</span></li>
                 </ul>
-                <button data-key="orderCleaning">Заказать уборку</button>
+                <button data-key="orderCleaning" onclick="window.location.href='order.html'">Заказать уборку</button>
             </div>
             <div class="welcome-image">
                 <img src="images/welcome2.png" alt="Приветственное изображение">
@@ -73,34 +73,48 @@
                 <h2 data-key="services">Услуги</h2>
                 <div class="underline"></div>
             </div>
-            <div class="service-grid">
-                <div class="service-card">
-                    <div>
-                        <h3 data-key="cleaning">Уборка помещений</h3>
-                        <p data-key="cleaningDescription">Комплексная уборка офисов, квартир и других помещений с использованием профессионального оборудования.</p>
-                        <div class="price">от 500 руб.</div>
-                        <button data-key="details">Подробнее</button>
-                    </div>
-                    <img src="images/bgsa.png" alt="Уборка помещений">
-                </div>
-                <div class="service-card">
-                    <div>
-                        <h3 data-key="furnitureCleaning">Химчистка мебели и ковров</h3>
-                        <p data-key="furnitureCleaningDescription">Глубокая очистка мебели и ковров от загрязнений и аллергенов с использованием безопасных средств.</p>
-                        <div class="price">от 700 руб.</div>
-                        <button data-key="details">Подробнее</button>
-                    </div>
-                    <img src="images/divan.png" alt="Химчистка мебели и ковров">
-                </div>
-                <div class="service-card">
-                    <div>
-                        <h3 data-key="postRenovation">Уборка после ремонта</h3>
-                        <p data-key="postRenovationDescription">Полная уборка после строительных работ, включая удаление пыли, грязи и строительного мусора.</p>
-                        <div class="price">от 1000 руб.</div>
-                        <button data-key="details">Подробнее</button>
-                    </div>
-                    <img src="images/dizen.png" alt="Уборка после ремонта">
-                </div>
+            <div class="service-table">
+                <h3>Прайс услуг</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="service-item">
+                                <div class="price">Цена: 500 руб.</div>
+                                <img src="images/divan.jpg" alt="Химчистка дивана">
+                                <button data-key="details">Подробнее</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="service-item">
+                                <img src="images/kovor.jpg" alt="Химчистка ковра">
+                                <div class="price">Цена: 800 руб.</div>
+                                <button data-key="details">Подробнее</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="service-item">
+                                <div class="price">Цена: 700 руб.</div>
+                                <img src="images/matras.jpg" alt="Химчистка матраса">
+                                <button data-key="details">Подробнее</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="service-item">
+                                <img src="images/dizen.jpg" alt="Дезинфекция">
+                                <div class="price">Цена: 1200 руб.</div>
+                                <button data-key="details">Подробнее</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="service-item">
+                                <div class="price">Цена: 1500 руб.</div>
+                                <img src="images/shtory.jpg" alt="Химчистка штор">
+                                <button data-key="details">Подробнее</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p>Самые выгодные предложения!</p>
             </div>
         </div>
 

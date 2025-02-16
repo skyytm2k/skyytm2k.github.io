@@ -240,3 +240,28 @@ document.querySelector('.logo-link').addEventListener('click', function (e) {
         behavior: 'smooth'
     });
 });
+
+ymaps.ready(init);
+
+function init() {
+    const map = new ymaps.Map("map", {
+        center: [45.048, 35.379], // Координаты Феодосии
+        zoom: 12,
+        controls: [] // Убираем лишние элементы управления
+    });
+
+    const searchControl = new ymaps.control.SearchControl({
+        options: {
+            provider: 'yandex#search',
+            noPlacemark: true // Не показывать метку на карте
+        }
+    });
+
+    map.controls.add(searchControl);
+
+    // Обработка выбора адреса
+    searchControl.events.add('resultselect', function (e) {
+        const selectedAddress = searchControl.getResultsArray()[e.get('index')].properties.get('name');
+        document.getElementById('address').value = selectedAddress;
+    });
+}
