@@ -76,10 +76,13 @@ nav a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px 20px 100px 20px;
-    background: linear-gradient(135deg, #f9f9f9, #e0e0e0); /* Градиентный фон */
+    padding: 100px 20px 80px 20px; /* Уменьшаем верхний отступ */
+    background-image: url('images/welcome.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
     text-align: center;
-    color: #333;
     position: relative;
     overflow: hidden;
 }
@@ -92,6 +95,7 @@ nav a:hover::after {
     width: 100%;
     position: relative;
     z-index: 2;
+    padding: 0 20px; /* Добавляем отступы по бокам */
 }
 
 .welcome-text {
@@ -101,6 +105,7 @@ nav a:hover::after {
     animation: fadeIn 1.5s ease-in-out;
     position: relative;
     z-index: 2;
+    margin-right: 20px; /* Добавляем отступ справа */
 }
 
 .welcome-text h1 {
@@ -161,7 +166,7 @@ nav a:hover::after {
 }
 
 .welcome-image {
-    max-width: 50%;
+    max-width: 1150%;
     animation: fadeInRight 1.5s ease-in-out;
     position: relative;
     z-index: 2;
@@ -171,7 +176,8 @@ nav a:hover::after {
     width: 100%;
     max-width: 800px; /* Увеличиваем размер изображения */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: none; /* Убираем тень */
+    transform: none; /* Убираем трансформации */
 }
 
 /* Декоративные элементы */
@@ -182,7 +188,7 @@ nav a:hover::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)); /* Лёгкий градиент */
+    background: rgba(0, 0, 0, 0.5); /* Затемнение фона для лучшей читаемости текста */
     z-index: 1;
 }
 
@@ -227,7 +233,7 @@ nav a:hover::after {
 
 .welcome-text {
     max-width: 50%;
-    color: #333;
+    color: #fff; /* Белый текст */
     text-align: left;
     animation: fadeIn 1.5s ease-in-out;
     position: relative;
@@ -238,12 +244,14 @@ nav a:hover::after {
     font-size: 48px;
     margin-bottom: 20px;
     animation: slideInLeft 1s ease-in-out;
+    color: #fff; /* Белый цвет заголовка */
 }
 
 .welcome-text p {
     font-size: 18px;
     margin-bottom: 20px;
     animation: slideInLeft 1.2s ease-in-out;
+    color: #fff; /* Белый цвет текста */
 }
 
 .welcome-text ul {
@@ -261,6 +269,7 @@ nav a:hover::after {
     gap: 10px;
     font-size: 16px;
     animation: fadeIn 1.5s ease-in-out;
+    color: #fff; /* Белый цвет текста */
 }
 
 .welcome-text ul li img {
@@ -678,4 +687,20 @@ footer .social-links a:hover {
 
 .rating .filled {
     fill: #337AB7;
+}
+
+#language-toggle {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#language-toggle:hover {
+    background-color: #0056b3;
 }

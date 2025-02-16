@@ -3,41 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Клининг Феодосия</title>
+    <title data-key="title">Химчистка и дезинфекция в Феодосии</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Клининг в Феодосии</h1>
+        <a href="#" class="logo-link">
+            <img src="images/logo.png" alt="Логотип компании" class="logo">
+        </a>
         <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="uslugi.html">Услуги</a></li>
-                <li><a href="onas.html">О нас</a></li>
-                <li><a href="otzovi.html">Отзывы</a></li>
-                <li><a href="order.html">Заказать уборку</a></li>
-            </ul>
+            <a href="#about" data-key="about">О нас</a>
+            <a href="#services" data-key="services">Услуги</a>
+            <a href="#reviews" data-key="reviews">Отзывы</a>
+            <a href="#contacts" data-key="contacts">Контакты</a>
         </nav>
+        <div class="contact-info">
+            <span>+7 (978) 512-03-92</span>
+        </div>
+        <button id="language-toggle">EN</button>
     </header>
 
-    <main>
-        <h1>Главная страница</h1>
-        <p>Добро пожаловать на сайт клининговой компании в Феодосии! Мы предлагаем профессиональные услуги уборки для вашего комфорта.</p>
-        <p>Наши клиенты доверяют нам, потому что мы гарантируем качество и чистоту.</p>
-        <h2>Почему выбирают нас?</h2>
-        <hr>
-        <p>Мы используем современное оборудование и экологически чистые средства.</p>
-        <h3>Наши преимущества</h3>
-        <p>Быстро, качественно и доступно!</p>
-        <hr>
-        <ul type="square">
-            <li>Генеральная уборка</li>
-            <li>Ежедневная уборка</li>
-            <li>Химчистка ковров</li>
-        </ul>
-    </main>
+    <div class="welcome-screen">
+        <div class="welcome-content">
+            <div class="welcome-text">
+                <h1 data-key="welcomeTitle">Химчистка и дезинфекция в Феодосии</h1>
+                <p data-key="welcomeText">Срочный вызов на дом, офис, квартиру:</p>
+                <ul>
+                    <li><img src="images/icon-check.png" alt="Иконка"> <span data-key="freeConsultation">Бесплатная консультация</span></li>
+                    <li><img src="images/icon-check.png" alt="Иконка"> <span data-key="acceptRequests">Прием заявок 24 часа</span></li>
+                    <li><img src="images/icon-check.png" alt="Иконка"> <span data-key="specialistArrival">Специалист будет у вас в течение 30 минут!</span></li>
+                    <li><img src="images/icon-check.png" alt="Иконка"> <span data-key="professionalEquipment">Работаем только с профессиональным оборудованием</span></li>
+                    <li><img src="images/icon-check.png" alt="Иконка"> <span data-key="warranty">Гарантия до 24 месяцев!</span></li>
+                </ul>
+                <button data-key="orderCleaning">Заказать уборку</button>
+            </div>
+            <div class="welcome-image">
+                <img src="images/welcome2.png" alt="Приветственное изображение">
+            </div>
+        </div>
+    </div>
+
+    <div class="advantages">
+        <div class="advantage">
+            <img src="images/icon1.png" alt="Быстро">
+            <div>
+                <h3 data-key="fast">Быстро</h3>
+                <p data-key="fastDescription">Специалист будет у вас в течение 30 минут!</p>
+            </div>
+        </div>
+        <div class="advantage">
+            <img src="images/icon2.png" alt="Качественно">
+            <div>
+                <h3 data-key="quality">Качественно</h3>
+                <p data-key="qualityDescription">Работаем только с профессиональным оборудованием.</p>
+            </div>
+        </div>
+        <div class="advantage">
+            <img src="images/icon3.png" alt="Гарантия">
+            <div>
+                <h3 data-key="guarantee">Гарантия</h3>
+                <p data-key="guaranteeDescription">Гарантия до 24 месяцев!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="services">
+            <div class="section-title">
+                <h2 data-key="services">Услуги</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div>
+                        <h3 data-key="cleaning">Уборка помещений</h3>
+                        <p data-key="cleaningDescription">Комплексная уборка офисов, квартир и других помещений с использованием профессионального оборудования.</p>
+                        <div class="price">от 500 руб.</div>
+                        <button data-key="details">Подробнее</button>
+                    </div>
+                    <img src="images/bgsa.png" alt="Уборка помещений">
+                </div>
+                <div class="service-card">
+                    <div>
+                        <h3 data-key="furnitureCleaning">Химчистка мебели и ковров</h3>
+                        <p data-key="furnitureCleaningDescription">Глубокая очистка мебели и ковров от загрязнений и аллергенов с использованием безопасных средств.</p>
+                        <div class="price">от 700 руб.</div>
+                        <button data-key="details">Подробнее</button>
+                    </div>
+                    <img src="images/divan.png" alt="Химчистка мебели и ковров">
+                </div>
+                <div class="service-card">
+                    <div>
+                        <h3 data-key="postRenovation">Уборка после ремонта</h3>
+                        <p data-key="postRenovationDescription">Полная уборка после строительных работ, включая удаление пыли, грязи и строительного мусора.</p>
+                        <div class="price">от 1000 руб.</div>
+                        <button data-key="details">Подробнее</button>
+                    </div>
+                    <img src="images/dizen.png" alt="Уборка после ремонта">
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="about-us">
+            <div class="section-title">
+                <h2 data-key="about">О нас</h2>
+                <div class="underline"></div>
+            </div>
+            <h3 data-key="commonProblems">Популярные проблемы</h3>
+            <p data-key="commonProblemsDesc">В процессе химчистки и дезинфекции часто возникают такие проблемы, как устойчивые пятна, которые сложно удалить, аллергены и микробы в труднодоступных местах. Наша компания использует профессиональное оборудование и средства, позволяющие эффективно справляться с этими задачами.</p>
+            <h3 data-key="ourAdvantages">Преимущества нашего сервиса</h3>
+            <p data-key="ourAdvantagesDesc">Мы гарантируем высокое качество обслуживания, быстрый выезд специалиста и использование профессионального оборудования. Наши услуги не только устраняют видимые проблемы, но и способствуют уничтожению микробов, обеспечивая здоровую атмосферу в вашем помещении. Кроме того, мы предлагаем гарантию на все виды работ.</p>
+            <h3 data-key="howItWorks">Как проходит химчистка и дезинфекция</h3>
+            <p data-key="howItWorksDesc">Процесс начинается с диагностики и определения типа загрязнения. Далее, в зависимости от задачи, выбирается метод и средства для химчистки или дезинфекции. Наши мастера тщательно обрабатывают каждый участок, обеспечивая глубокое очищение и дезинфекцию. По завершении работы проводится финальная проверка качества.</p>
+            <h3 data-key="pricing">Стоимость химчистки и дезинфекции</h3>
+            <p data-key="pricingDesc">Цена на химчистку и дезинфекцию зависит от нескольких факторов: размера и типа обрабатываемой поверхности, степени загрязнения, а также необходимости использования специализированных средств. Мы предлагаем конкурентоспособные цены и готовы предоставить точную стоимость после осмотра объекта.</p>
+            <h3 data-key="howToOrder">Как можно вызвать специалиста</h3>
+            <p data-key="howToOrderDesc">Заказать выезд специалиста можно, позвонив по телефону: +7 (978) 512-03-92, или оставив заявку в онлайн-форме на нашем сайте. Мы гарантируем быстрый отклик и готовы оперативно приступить к решению вашей проблемы.</p>
+            <p data-key="finalNote">Выбирая нас, вы выбираете надежность, качество и профессионализм. Обращайтесь, и ваш дом или офис будет сиять чистотой и свежестью!</p>
+        </div>
+
+        <div id="reviews" class="reviews">
+            <div class="section-title">
+                <h2 data-key="reviews">Клиенты говорят</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="review-form">
+                <input type="text" id="review-name" placeholder="Ваше ФИО" required>
+                <input type="text" id="review-phone" placeholder="Ваш номер телефона" required>
+                <textarea id="review-text" placeholder="Ваш отзыв" rows="5" required></textarea>
+                
+                <div class="full-stars">
+                    <div class="rating-group">
+                        <input name="fst" value="0" type="radio" disabled checked />
+                        <label for="fst-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-1" value="1" type="radio" />
+                        <label for="fst-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-2" value="2" type="radio" />
+                        <label for="fst-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-3" value="3" type="radio" />
+                        <label for="fst-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-4" value="4" type="radio" />
+                        <label for="fst-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                        </label>
+                        <input name="fst" id="fst-5" value="5" type="radio" />
+                    </div>
+                </div>
+                
+                <button onclick="addReview()" data-key="addReview">Добавить отзыв</button>
+            </div>
+            <div class="review-list" id="review-list"></div>
+            <div class="nav-arrows">
+                <button onclick="prevReview()">←</button>
+                <button onclick="nextReview()">→</button>
+            </div>
+        </div>
+
+        <div id="contacts" class="contacts">
+            <div class="section-title">
+                <h2 data-key="contacts">Контакты</h2>
+                <div class="underline"></div>
+            </div>
+            <p data-key="address">Адрес: Республика Крым, г. Феодосия, Симферопольское ш., д. 26</p>
+            <p data-key="phone">Телефон: +7 (978) 512-03-92</p>
+            <p data-key="email">Email: nikituxa111@gmail.com</p>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Клининг в Феодосии. Все права защищены.</p>
+        <img src="images/logo.png" alt="Логотип компании" class="logo">
+        <div class="social-links">
+            <a href="https://vk.com/skyteamer" target="_blank">ВК</a>
+            <a href="https://t.me/skyteamer" target="_blank">Телеграмм</a>
+            <a href="#" onclick="alert('он заблакирован трололо :))')">Тикток</a>
+        </div>
+        <p>© 2025, <span data-key="rights">Все права защищены</span></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

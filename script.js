@@ -1,7 +1,119 @@
+const translations = {
+    ru: {
+        title: "Химчистка и дезинфекция в Феодосии",
+        about: "О нас",
+        services: "Услуги",
+        reviews: "Отзывы",
+        contacts: "Контакты",
+        welcomeTitle: "Химчистка и дезинфекция в Феодосии",
+        welcomeText: "Срочный вызов на дом, офис, квартиру:",
+        freeConsultation: "Бесплатная консультация",
+        acceptRequests: "Прием заявок 24 часа",
+        specialistArrival: "Специалист будет у вас в течение 30 минут!",
+        professionalEquipment: "Работаем только с профессиональным оборудованием",
+        warranty: "Гарантия до 24 месяцев!",
+        orderCleaning: "Заказать уборку",
+        fast: "Быстро",
+        fastDescription: "Специалист будет у вас в течение 30 минут!",
+        quality: "Качественно",
+        qualityDescription: "Работаем только с профессиональным оборудованием.",
+        guarantee: "Гарантия",
+        guaranteeDescription: "Гарантия до 24 месяцев!",
+        cleaning: "Уборка помещений",
+        cleaningDescription: "Комплексная уборка офисов, квартир и других помещений с использованием профессионального оборудования.",
+        furnitureCleaning: "Химчистка мебели и ковров",
+        furnitureCleaningDescription: "Глубокая очистка мебели и ковров от загрязнений и аллергенов с использованием безопасных средств.",
+        postRenovation: "Уборка после ремонта",
+        postRenovationDescription: "Полная уборка после строительных работ, включая удаление пыли, грязи и строительного мусора.",
+        details: "Подробнее",
+        commonProblems: "Популярные проблемы",
+        commonProblemsDesc: "В процессе химчистки и дезинфекции часто возникают такие проблемы, как устойчивые пятна, которые сложно удалить, аллергены и микробы в труднодоступных местах. Наша компания использует профессиональное оборудование и средства, позволяющие эффективно справляться с этими задачами.",
+        ourAdvantages: "Преимущества нашего сервиса",
+        ourAdvantagesDesc: "Мы гарантируем высокое качество обслуживания, быстрый выезд специалиста и использование профессионального оборудования. Наши услуги не только устраняют видимые проблемы, но и способствуют уничтожению микробов, обеспечивая здоровую атмосферу в вашем помещении. Кроме того, мы предлагаем гарантию на все виды работ.",
+        howItWorks: "Как проходит химчистка и дезинфекция",
+        howItWorksDesc: "Процесс начинается с диагностики и определения типа загрязнения. Далее, в зависимости от задачи, выбирается метод и средства для химчистки или дезинфекции. Наши мастера тщательно обрабатывают каждый участок, обеспечивая глубокое очищение и дезинфекцию. По завершении работы проводится финальная проверка качества.",
+        pricing: "Стоимость химчистки и дезинфекции",
+        pricingDesc: "Цена на химчистку и дезинфекцию зависит от нескольких факторов: размера и типа обрабатываемой поверхности, степени загрязнения, а также необходимости использования специализированных средств. Мы предлагаем конкурентоспособные цены и готовы предоставить точную стоимость после осмотра объекта.",
+        howToOrder: "Как можно вызвать специалиста",
+        howToOrderDesc: "Заказать выезд специалиста можно, позвонив по телефону: +7 (978) 512-03-92, или оставив заявку в онлайн-форме на нашем сайте. Мы гарантируем быстрый отклик и готовы оперативно приступить к решению вашей проблемы.",
+        finalNote: "Выбирая нас, вы выбираете надежность, качество и профессионализм. Обращайтесь, и ваш дом или офис будет сиять чистотой и свежестью!",
+        address: "Адрес: Республика Крым, г. Феодосия, Симферопольское ш., д. 26",
+        phone: "Телефон: +7 (978) 512-03-92",
+        email: "Email: nikituxa111@gmail.com",
+        rights: "Все права защищены",
+        addReview: "Добавить отзыв"
+    },
+    en: {
+        title: "Dry Cleaning and Disinfection in Feodosia",
+        about: "About Us",
+        services: "Services",
+        reviews: "Reviews",
+        contacts: "Contacts",
+        welcomeTitle: "Dry Cleaning and Disinfection in Feodosia",
+        welcomeText: "Emergency call to home, office, apartment:",
+        freeConsultation: "Free consultation",
+        acceptRequests: "24/7 service",
+        specialistArrival: "Specialist will arrive within 30 minutes!",
+        professionalEquipment: "We use professional equipment",
+        warranty: "24 months warranty!",
+        orderCleaning: "Order Cleaning",
+        fast: "Fast",
+        fastDescription: "Specialist will arrive within 30 minutes!",
+        quality: "Quality",
+        qualityDescription: "We use professional equipment.",
+        guarantee: "Warranty",
+        guaranteeDescription: "24 months warranty!",
+        cleaning: "Premises Cleaning",
+        cleaningDescription: "Comprehensive cleaning of offices, apartments, and other premises using professional equipment.",
+        furnitureCleaning: "Furniture and Carpet Cleaning",
+        furnitureCleaningDescription: "Deep cleaning of furniture and carpets from dirt and allergens using safe products.",
+        postRenovation: "Post-Renovation Cleaning",
+        postRenovationDescription: "Complete cleaning after construction work, including removal of dust, dirt, and construction debris.",
+        details: "Details",
+        commonProblems: "Common Problems",
+        commonProblemsDesc: "During dry cleaning and disinfection, common issues such as stubborn stains, allergens, and microbes in hard-to-reach areas often arise. Our company uses professional equipment and products to effectively address these challenges.",
+        ourAdvantages: "Our Advantages",
+        ourAdvantagesDesc: "We guarantee high-quality service, quick specialist arrival, and the use of professional equipment. Our services not only eliminate visible issues but also help destroy microbes, ensuring a healthy environment in your space. Additionally, we offer a warranty on all types of work.",
+        howItWorks: "How It Works",
+        howItWorksDesc: "The process begins with diagnostics and determining the type of contamination. Depending on the task, the method and products for dry cleaning or disinfection are selected. Our specialists meticulously treat each area, ensuring deep cleaning and disinfection. A final quality check is performed upon completion.",
+        pricing: "Pricing",
+        pricingDesc: "The cost of dry cleaning and disinfection depends on several factors: the size and type of the surface being treated, the degree of contamination, and the need for specialized products. We offer competitive prices and can provide an exact quote after inspecting the object.",
+        howToOrder: "How to Order",
+        howToOrderDesc: "To order a specialist visit, call +7 (978) 512-03-92 or submit a request through our website. We guarantee a quick response and are ready to promptly address your issue.",
+        finalNote: "By choosing us, you choose reliability, quality, and professionalism. Contact us, and your home or office will shine with cleanliness and freshness!",
+        address: "Address: Republic of Crimea, Feodosia, Simferopolskoye sh., 26",
+        phone: "Phone: +7 (978) 512-03-92",
+        email: "Email: nikituxa111@gmail.com",
+        rights: "All rights reserved",
+        addReview: "Add Review"
+    }
+};
+let currentLanguage = 'ru';
 let currentReviewIndex = 0;
 const reviewsPerPage = 3;
 const isAdmin = false; // Установите false для обычного пользователя
+function changeLanguage(lang) {
+    currentLanguage = lang;
+    document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+    localStorage.setItem('language', lang);
+}
 
+document.getElementById('language-toggle').addEventListener('click', () => {
+    const newLang = currentLanguage === 'ru' ? 'en' : 'ru';
+    changeLanguage(newLang);
+    document.getElementById('language-toggle').textContent = newLang === 'ru' ? 'EN' : 'RU';
+});
+
+window.onload = () => {
+    const savedLang = localStorage.getItem('language') || 'ru';
+    changeLanguage(savedLang);
+    document.getElementById('language-toggle').textContent = savedLang === 'ru' ? 'EN' : 'RU';
+};
 // Функция для добавления отзыва
 function addReview() {
     const name = document.getElementById('review-name').value;
